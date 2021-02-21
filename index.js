@@ -55,7 +55,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile() {
-  fs.writeFile('readme.md', "", (err) =>
+  fs.writeFile('genreadme.md', "", (err) =>
     err ? console.error(err) : console.log('')
   );
 }
@@ -65,31 +65,31 @@ writeToFile()
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((answers) => {
-    fs.appendFile('readme.md', '#' + ' ' + 'title' + '\n' + answers.title + '\n', (err) =>
+    fs.appendFile('genreadme.md', '#' + ' ' + 'title' + '\n' + answers.title + '\n', (err) =>
    err ? console.error(err) : console.log('')
  );
- fs.appendFile('readme.md', '#' + ' ' + 'description' + '\n' + answers.description + '\n', (err) =>
+ fs.appendFile('genreadme.md', '#' + ' ' + 'description' + '\n' + answers.description + '\n', (err) =>
    err ? console.error(err) : console.log('')
  );
- fs.appendFile('readme.md', '#' + ' ' + 'Table of Contents' + '\n' + toc + '\n', (err) =>
+ fs.appendFile('genreadme.md', '#' + ' ' + 'Table of Contents' + '\n' + toc + '\n', (err) =>
    err ? console.error(err) : console.log('')
  );
- fs.appendFile('readme.md', '#' + ' ' + 'Installation' + '\n' + answers.installation + '\n', (err) =>
+ fs.appendFile('genreadme.md', '#' + ' ' + 'Installation' + '\n' + answers.installation + '\n', (err) =>
    err ? console.error(err) : console.log('')
  );
- fs.appendFile('readme.md', '#' + ' ' + 'Usage' + '\n' + answers.usage + '\n', (err) =>
+ fs.appendFile('genreadme.md', '#' + ' ' + 'Usage' + '\n' + answers.usage + '\n', (err) =>
    err ? console.error(err) : console.log('')
  );
- fs.appendFile('readme.md', '#' + ' ' + 'License' + '\n' + answers.license + '\n', (err) =>
+ fs.appendFile('genreadme.md', '#' + ' ' + 'License' + '\n' + answers.license + '\n', (err) =>
    err ? console.error(err) : console.log('')
  );
- fs.appendFile('readme.md', '#' + ' ' + 'Contributors' + '\n' + answers.contributing + '\n', (err) =>
+ fs.appendFile('genreadme.md', '#' + ' ' + 'Contributors' + '\n' + answers.contributing + '\n', (err) =>
  err ? console.error(err) : console.log('')
 );
-fs.appendFile('readme.md', '#' + ' ' + 'Testing' + '\n' + answers.tests + '\n', (err) =>
+fs.appendFile('genreadme.md', '#' + ' ' + 'Testing' + '\n' + answers.tests + '\n', (err) =>
    err ? console.error(err) : console.log('')
  );
-fs.appendFile('readme.md', '#' + ' ' + 'Questions?' + '\n' + "https://github.com/" + answers.questions + '\n' + answers.email + '\n', (err) =>
+fs.appendFile('genreadme.md', '#' + ' ' + 'Questions?' + '\n' + "https://github.com/" + answers.questions + '\n' + answers.email + '\n', (err) =>
    err ? console.error(err) : console.log('')
  );
 
