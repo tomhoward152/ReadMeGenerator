@@ -1,6 +1,6 @@
-# title
+# Title
 Read Me Generator
-# description
+# Fescription
 This project allows the user to create a readme file simply by answering the prompts as they appear. This readme was also generated from the program.
 # Installation
 
